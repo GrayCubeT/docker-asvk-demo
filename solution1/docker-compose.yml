@@ -1,0 +1,14 @@
+version: "3"
+services:
+  server:
+    image: graycube/docker-asvk:server1
+    
+    ports:
+      - "6000:6000"
+  client:
+    image: graycube/docker-asvk:client1
+
+    network_mode: host
+
+    depends_on: 
+      - server
