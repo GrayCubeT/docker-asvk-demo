@@ -10,7 +10,7 @@ services:
       - "5000:5000"
 
   client:
-    image: graycube/docker-asvk:server2
+    image: graycube/docker-asvk:client2
 
     network_mode: host
 
